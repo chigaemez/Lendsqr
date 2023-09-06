@@ -10,5 +10,21 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Space Grotesk', sans-serif;
     scroll-behavior: smooth;
-    overflow-y: hidden;
+    
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #39cdcc);
+    border-radius: 8px;
+  }
+  
+  .xscroll::-webkit-scrollbar {
+    height: 5px;
+  }
+  .xscroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(50deg, transparent, #39cdcc);
+    border-radius: 8px;
+  }

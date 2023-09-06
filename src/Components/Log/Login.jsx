@@ -20,7 +20,7 @@ const Login = () => {
 
           <div className='form'>
             <form action=''>
-              <div className='form-action'>
+              <div className='mt-7'>
                 <input
                   type='text'
                   placeholder='Email'
@@ -30,7 +30,7 @@ const Login = () => {
                 />
               </div>
 
-              <div className='relative  mt-1'>
+              <div className='relative  my-7'>
                 <input
                   name='password'
                   type={showPassword ? 'text' : 'password'}
@@ -49,13 +49,13 @@ const Login = () => {
                 </div>
               </div>
               <div className='form-action'>
-                <a href='#' className='text-xs my-5 text-primary'>
+                <a href='#' className='text-xs mt-7 text-primary'>
                   {' '}
                   FORGOT PASSWORD?
                 </a>
               </div>
 
-              <div className='form-action'>
+              <div className='mt-7'>
                 <Link to="/user">
                   <input
                     type='button'
