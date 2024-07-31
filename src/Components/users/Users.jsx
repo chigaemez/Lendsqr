@@ -44,7 +44,7 @@ const Users = () => {
     <div className='flex bg-slate-200 '>
       <SideBar />
 
-      <div className='flex flex-col px-4  w-[90%]'>
+      <div className='flex flex-col px-4 ml-[100px] w-[90%]'>
         <h1 className='text-3xl mx-[20px] my-11'>Users</h1>
 
         <div className='grid grid-cols-1 md:grid-cols-4 gap-9 my-5'>
@@ -114,11 +114,12 @@ const Users = () => {
           <tbody className='bg-white'>
             {usersdatas.map((user, index) => (
               <tr key={index}>
-                <td className='border p-3'>{user.orgName}</td>
-                <td className='border p-3'>{user.userName}</td>
-                <td className='border p-3'>{user.email}</td>
-                <td className='border p-3'>{user.phoneNumber}</td>
-                <td className='border p-3'>{user.lastActiveDate}</td>
+                <td className='border-y-2 p-3'>{user.orgName}</td>
+                <td className='border-y-2 p-3'>{user.userName}</td>
+                <td className='border-y-2 p-3'>{user.email}</td>
+                <td className='border-y-2 p-3'>{user.phoneNumber}</td>
+                <td className='border-y-2 p-3'>{user.lastActiveDate}</td>
+                <td className='flex flex-col cursor-pointer mx-3 '><p className=''>.</p><p className='-mt-4'>.</p><p className='-mt-4'>.</p></td>
               </tr>
             ))}
           </tbody>
@@ -146,6 +147,11 @@ const Users = () => {
             nextLabel={<img src={nextbtn} alt='' className='w-[50%] mx-3' />}
           />
         </div>
+        {
+          <div>
+            
+          </div>
+        }
       </div>
     </div>
   )
